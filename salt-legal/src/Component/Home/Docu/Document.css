@@ -1,0 +1,92 @@
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* .card-container1{
+  background-color: #ededee;
+  border-top: 1px solid #02244a;
+  border-bottom: 1px solid #02244a;
+}
+ */
+.card {
+  width: 20%; /* To show 4 cards in a row */
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  align-items: center;
+  background-color: white;
+
+}
+
+.card-container h3{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+ 
+ 
+}
+.card-container p{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.card h4{
+  color:#02244a;
+}
+.card h3 {
+  margin-top: 0;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  cursor: pointer;
+ 
+  margin-top: 20px; 
+  margin-bottom: 60px;
+}
+
+
+.center-button button{
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.6) !important;
+}
+
+.chevron-icon {
+  margin-left: auto; 
+  cursor: pointer;
+}
+
+.dropdown-options {
+  /* position: relative; */
+  top: calc(100% + 10px); /* Adjust the distance from the top */
+  left: 50%; /* Position it centered horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  width: 400px; 
+  display: none; 
+}
+
+.card:hover .dropdown-options {
+  display: block; /* Show when parent card is hovered */
+}
